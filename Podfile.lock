@@ -1,0 +1,16 @@
+PODS:
+  - hpple (0.2.0)
+
+DEPENDENCIES:
+  - hpple
+
+SPEC REPOS:
+  trunk:
+    - hpple
+
+SPEC CHECKSUMS:
+  hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
+
+PODFILE CHECKSUM: d2930491e604685c20d347c040d93d26d090d941
+
+COCOAPODS: 1.11.3
