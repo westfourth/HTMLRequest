@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "mac" => "mac@apple.com" }
   spec.platform     = :ios, "14.0"
 
-  spec.source       = { :git => "https://github.com/westfourth/HTMLRequest" }
+  spec.source       = { :git => "https://github.com/westfourth/HTMLRequest.git" }
 
   spec.source_files  = "HTMLRequest/*.{h,m}"
   spec.public_header_files = "HTMLRequest/*.h"
