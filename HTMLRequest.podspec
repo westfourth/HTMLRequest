@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "HTMLRequest"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "HTML网络请求"
 
   spec.description  = <<-DESC
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = "http://westfourth.github.io"
   spec.license      = "MIT"
-  spec.author             = { "mac" => "mac@apple.com" }
+  spec.author             = { "xisixisi" => "xisixisi@gmail.com" }
   spec.platform     = :ios, "14.0"
 
   spec.source       = { :git => "https://github.com/westfourth/HTMLRequest.git" }
