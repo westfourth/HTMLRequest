@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
     取缓存
  
     1. 不存在，返回nil
-    2. 没有超过最大缓存时长，返回data
+    2. 没有超过缓存时长，返回data
     3. 超过缓存时长，移除缓存，返回nil
  */
 - (nullable NSData *)dataForRequest:(NSURLRequest *)req

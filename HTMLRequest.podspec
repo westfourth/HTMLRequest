@@ -3,14 +3,14 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "HTMLRequest"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "HTML网络请求"
 
   spec.description  = <<-DESC
   						HTML网络请求，依赖hpple
                    DESC
 
-  spec.homepage     = "http://westfourth.github.io"
+  spec.homepage     = "https://cocoapods.org/pods/HTMLRequest"
   spec.license      = "MIT"
   spec.author             = { "xisixisi" => "xisixisi@gmail.com" }
   spec.platform     = :ios, "14.0"
