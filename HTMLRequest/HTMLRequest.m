@@ -33,7 +33,7 @@ static void IDLog(NSString *format, ...) {
     if (self) {
         self.cacheEnabled = YES;
         self.logEnabled = YES;
-        self.cache = [HTMLCache new];
+        self.cache = [XSURLCache new];
     }
     return self;
 }
@@ -49,6 +49,7 @@ static void IDLog(NSString *format, ...) {
     
     NSURL *url = [NSURL URLWithString:[urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    req.cacheDuration = 24 * 60 * 60;           //  24小时
     
     if (self.cacheEnabled) {
         //  取缓存

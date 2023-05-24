@@ -12,8 +12,8 @@
 		5A5CABC52A13B6B2001E9F88 /* HTMLRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CABC42A13B6B2001E9F88 /* HTMLRequestTests.m */; };
 		5A5CABD12A13B7CA001E9F88 /* HTMLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A5CABCF2A13B7CA001E9F88 /* HTMLRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A5CABD22A13B7CA001E9F88 /* HTMLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CABD02A13B7CA001E9F88 /* HTMLRequest.m */; };
-		5A5CABD52A13B7D3001E9F88 /* HTMLCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A5CABD32A13B7D3001E9F88 /* HTMLCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A5CABD62A13B7D3001E9F88 /* HTMLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CABD42A13B7D3001E9F88 /* HTMLCache.m */; };
+		5A5CABD52A13B7D3001E9F88 /* XSURLCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A5CABD32A13B7D3001E9F88 /* XSURLCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A5CABD62A13B7D3001E9F88 /* XSURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CABD42A13B7D3001E9F88 /* XSURLCache.m */; };
 		DD0EF82CFDF3D34B004E53AA /* Pods_HTMLRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A95F922EAD1D11EEE891FD1 /* Pods_HTMLRequest.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +34,8 @@
 		5A5CABC42A13B6B2001E9F88 /* HTMLRequestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMLRequestTests.m; sourceTree = "<group>"; };
 		5A5CABCF2A13B7CA001E9F88 /* HTMLRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMLRequest.h; sourceTree = "<group>"; };
 		5A5CABD02A13B7CA001E9F88 /* HTMLRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMLRequest.m; sourceTree = "<group>"; };
-		5A5CABD32A13B7D3001E9F88 /* HTMLCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMLCache.h; sourceTree = "<group>"; };
-		5A5CABD42A13B7D3001E9F88 /* HTMLCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMLCache.m; sourceTree = "<group>"; };
+		5A5CABD32A13B7D3001E9F88 /* XSURLCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSURLCache.h; sourceTree = "<group>"; };
+		5A5CABD42A13B7D3001E9F88 /* XSURLCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSURLCache.m; sourceTree = "<group>"; };
 		7A95F922EAD1D11EEE891FD1 /* Pods_HTMLRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTMLRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA29E6CD126F180ABE9B866 /* Pods-HTMLRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTMLRequest.release.xcconfig"; path = "Target Support Files/Pods-HTMLRequest/Pods-HTMLRequest.release.xcconfig"; sourceTree = "<group>"; };
 		DF855A14CE5CA55CEC6B9B55 /* Pods-HTMLRequest-HTMLRequestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTMLRequest-HTMLRequestTests.release.xcconfig"; path = "Target Support Files/Pods-HTMLRequest-HTMLRequestTests/Pods-HTMLRequest-HTMLRequestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,8 +100,8 @@
 			children = (
 				5A5CABCF2A13B7CA001E9F88 /* HTMLRequest.h */,
 				5A5CABD02A13B7CA001E9F88 /* HTMLRequest.m */,
-				5A5CABD32A13B7D3001E9F88 /* HTMLCache.h */,
-				5A5CABD42A13B7D3001E9F88 /* HTMLCache.m */,
+				5A5CABD32A13B7D3001E9F88 /* XSURLCache.h */,
+				5A5CABD42A13B7D3001E9F88 /* XSURLCache.m */,
 			);
 			path = HTMLRequest;
 			sourceTree = "<group>";
@@ -130,7 +130,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A5CABD52A13B7D3001E9F88 /* HTMLCache.h in Headers */,
+				5A5CABD52A13B7D3001E9F88 /* XSURLCache.h in Headers */,
 				5A5CABD12A13B7CA001E9F88 /* HTMLRequest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A5CABD22A13B7CA001E9F88 /* HTMLRequest.m in Sources */,
-				5A5CABD62A13B7D3001E9F88 /* HTMLCache.m in Sources */,
+				5A5CABD62A13B7D3001E9F88 /* XSURLCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

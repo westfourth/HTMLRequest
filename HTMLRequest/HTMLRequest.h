@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <hpple/TFHpple.h>
-#import "HTMLCache.h"
+#import "XSURLCache.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)share;
 
 @property (nonatomic) NSString *domain;         //!< 域名。例如：https://miao101.com
-@property (nonatomic) HTMLCache *cache;         //!< 缓存
+@property (nonatomic) XSURLCache *cache;         //!< 缓存
 
 @property (nonatomic) BOOL cacheEnabled;        //!< 是否开启缓存，默认YES
 @property (nonatomic) BOOL logEnabled;          //!< 是否开启日志，默认YES
