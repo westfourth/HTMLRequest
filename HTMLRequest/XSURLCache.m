@@ -50,7 +50,7 @@ NSString *const XSURLCacheResponseDate = @"Response-Date";
     }
     
     NSTimeInterval interval = [[NSDate date] timeIntervalSinceDate:date];
-    if (interval > req.cacheDuration) {
+    if (interval <= req.cacheDuration) {
         return cachedURLResponse.data;
     } else {
         [[NSURLCache sharedURLCache] removeCachedResponseForRequest:req];
