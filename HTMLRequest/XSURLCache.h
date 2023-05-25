@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// HTML缓存
 @interface XSURLCache : NSObject
 
++ (instancetype)share;
+
 @property (nonatomic) NSDateFormatter *dateFormatter;
 
 /**

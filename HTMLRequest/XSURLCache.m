@@ -12,6 +12,15 @@ NSString *const XSURLCacheResponseDate = @"Response-Date";
 
 @implementation XSURLCache
 
++ (instancetype)share {
+    static id instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[self class] new];
+    });
+    return instance;
+}
+
 + (NSDateFormatter *)dateFormatter {
     NSDateFormatter *df = [NSDateFormatter new];
     df.timeZone = [NSTimeZone timeZoneWithName:@"GMT"];
