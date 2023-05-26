@@ -33,7 +33,7 @@ static void IDLog(NSString *format, ...) {
     if (self) {
         self.cacheEnabled = YES;
         self.logEnabled = YES;
-        self.cache = [XSURLCache new];
+        self.cache = XSURLCache.share;
     }
     return self;
 }
@@ -83,7 +83,7 @@ static void IDLog(NSString *format, ...) {
                 return;
             }
             
-            if (self.cacheEnabled && response != nil && data.length > 0) {
+            if (self.cacheEnabled) {
                 //  存缓存
                 [self.cache storeCachedResponse:response data:data forRequest:req];
             }

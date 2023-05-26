@@ -45,12 +45,14 @@ NSString *const XSURLCacheResponseDate = @"Response-Date";
         return nil;
     }
     
+    //  响应
     NSCachedURLResponse *cachedURLResponse = [[NSURLCache sharedURLCache] cachedResponseForRequest:req];
     *response = cachedURLResponse.response;
     if (cachedURLResponse == nil) {
         return nil;
     }
     
+    //  时间
     NSDictionary *userInfo = cachedURLResponse.userInfo;
     NSString *responseDateString = userInfo[XSURLCacheResponseDate];
     NSDate *date = [self.dateFormatter dateFromString:responseDateString];
@@ -58,13 +60,14 @@ NSString *const XSURLCacheResponseDate = @"Response-Date";
         return nil;
     }
     
+    //  超时
     NSTimeInterval interval = [[NSDate date] timeIntervalSinceDate:date];
-    if (interval <= req.cacheDuration) {
-        return cachedURLResponse.data;
-    } else {
+    if (interval > req.cacheDuration) {
         [[NSURLCache sharedURLCache] removeCachedResponseForRequest:req];
         return nil;
     }
+    
+    return cachedURLResponse.data;
 }
 
 /// 存缓存
@@ -72,6 +75,10 @@ NSString *const XSURLCacheResponseDate = @"Response-Date";
                        data:(NSData *)data
                  forRequest:(NSURLRequest *)req {
     if (![req.HTTPMethod isEqualToString:@"GET"]) {
+        return;
+    }
+    
+    if (res == nil || data.length == 0) {
         return;
     }
     

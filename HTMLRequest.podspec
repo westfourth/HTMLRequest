@@ -13,8 +13,8 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://cocoapods.org/pods/HTMLRequest"
   spec.license      = "MIT"
   spec.author             = { "xisixisi" => "xisixisi@gmail.com" }
+  
   spec.platform     = :ios, "14.0"
-
   spec.source       = { :git => "https://github.com/westfourth/HTMLRequest.git" }
 
   spec.source_files  = "HTMLRequest/*.{h,m}"
