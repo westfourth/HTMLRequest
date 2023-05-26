@@ -83,7 +83,7 @@ static void IDLog(NSString *format, ...) {
                 return;
             }
             
-            if (self.cacheEnabled) {
+            if (self.cacheEnabled && response != nil && data.length > 0) {
                 //  存缓存
                 [self.cache storeCachedResponse:response data:data forRequest:req];
             }

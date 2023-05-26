@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "HTMLRequest"
-  spec.version      = "0.0.8"
+  spec.version      = "0.0.9"
   spec.summary      = "HTML网络请求"
 
   spec.description  = <<-DESC
